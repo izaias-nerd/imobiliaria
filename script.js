@@ -5,24 +5,24 @@ let sendBTN = document.querySelector('#sendBTN');
 
 // Arrays de imagens e descrições (aluguel, compra, venda)
 const aluguelProperties = [
-    { image: '/images/casa1.jpg', descricao: 'Casa com 3 quartos, 2 banheiros, 120m². Aluguel: R$ 1.200/mês. Termos: Contrato de 1 ano, caução de 2 meses.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa2.png', descricao: 'Apartamento com 2 quartos, 1 banheiro, 80m². Aluguel: R$ 900/mês. Termos: Contrato de 6 meses, sem caução.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa4.jpg', descricao: 'Casa com 4 quartos, 3 banheiros, 200m². Aluguel: R$ 2.500/mês. Termos: Contrato de 2 anos, caução de 3 meses.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa5.jpg', descricao: 'Apartamento duplex com 3 quartos, 2 banheiros, 150m². Aluguel: R$ 1.800/mês. Termos: Contrato de 1 ano, caução de 1 mês.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' }   
+    { image: 'images/casa1.jpg', descricao: 'Casa com 3 quartos, 2 banheiros, 120m². Aluguel: R$ 1.200/mês. Termos: Contrato de 1 ano, caução de 2 meses.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa2.png', descricao: 'Apartamento com 2 quartos, 1 banheiro, 80m². Aluguel: R$ 900/mês. Termos: Contrato de 6 meses, sem caução.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa4.jpg', descricao: 'Casa com 4 quartos, 3 banheiros, 200m². Aluguel: R$ 2.500/mês. Termos: Contrato de 2 anos, caução de 3 meses.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa5.jpg', descricao: 'Apartamento duplex com 3 quartos, 2 banheiros, 150m². Aluguel: R$ 1.800/mês. Termos: Contrato de 1 ano, caução de 1 mês.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' }   
 ];
 
 const compraProperties = [
-    { image: '/images/casa1.jpg', descricao: 'Casa com 3 quartos, 2 banheiros, 120m². Valor de compra: R$ 350.000. Localização: Centro.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa2.png', descricao: 'Apartamento com 2 quartos, 1 banheiro, 80m². Valor de compra: R$ 250.000. Localização: Bairro Sul.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa4.jpg', descricao: 'Casa com 4 quartos, 3 banheiros, 200m². Valor de compra: R$ 600.000. Localização: Zona Norte.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa5.jpg', descricao: 'Apartamento duplex com 3 quartos, 2 banheiros, 150m². Valor de compra: R$ 450.000. Localização: Bairro Nobre.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' }
+    { image: 'images/casa1.jpg', descricao: 'Casa com 3 quartos, 2 banheiros, 120m². Valor de compra: R$ 350.000. Localização: Centro.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa2.png', descricao: 'Apartamento com 2 quartos, 1 banheiro, 80m². Valor de compra: R$ 250.000. Localização: Bairro Sul.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa4.jpg', descricao: 'Casa com 4 quartos, 3 banheiros, 200m². Valor de compra: R$ 600.000. Localização: Zona Norte.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa5.jpg', descricao: 'Apartamento duplex com 3 quartos, 2 banheiros, 150m². Valor de compra: R$ 450.000. Localização: Bairro Nobre.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' }
 ];
 
 const vendaProperties = [
-    { image: '/images/casa1.jpg', descricao: 'Venda: Casa com 3 quartos, 2 banheiros, 120m². Valor de venda sugerido: R$ 400.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa2.png', descricao: 'Venda: Apartamento com 2 quartos, 1 banheiro, 80m². Valor de venda sugerido: R$ 300.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa4.jpg', descricao: 'Venda: Casa com 4 quartos, 3 banheiros, 200m². Valor de venda sugerido: R$ 700.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
-    { image: '/images/casa5.jpg', descricao: 'Venda: Apartamento duplex com 3 quartos, 2 banheiros, 150m². Valor de venda sugerido: R$ 500.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' }
+    { image: 'images/casa1.jpg', descricao: 'Venda: Casa com 3 quartos, 2 banheiros, 120m². Valor de venda sugerido: R$ 400.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa2.png', descricao: 'Venda: Apartamento com 2 quartos, 1 banheiro, 80m². Valor de venda sugerido: R$ 300.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa4.jpg', descricao: 'Venda: Casa com 4 quartos, 3 banheiros, 200m². Valor de venda sugerido: R$ 700.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' },
+    { image: 'images/casa5.jpg', descricao: 'Venda: Apartamento duplex com 3 quartos, 2 banheiros, 150m². Valor de venda sugerido: R$ 500.000.<br><button class="whatsapp-button" data-number="+5511999999999">WhatsApp do Atendente</button>' }
 ];
 
 // Adiciona listener ao botão de envio
